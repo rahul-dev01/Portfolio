@@ -2,4 +2,6 @@
 # Ignore macOS system files
 .DS_Store
 
-.vscode/
+.vscode
+
+email.js

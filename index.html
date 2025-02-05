@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/b9a6362a78.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"></script>
+
     <link rel="stylesheet" href="./Css/style.css">
 </head>
 
@@ -46,12 +50,12 @@
                     innovative ideas into tangible digital solutions
                 </p>
 
-                <button class="home-btn">Contact Me    <i class="fa-solid fa-arrow-right"></i></button>
-                
+                <button class="home-btn">Contact Me <i class="fa-solid fa-arrow-right"></i></button>
+
             </div>
 
             <div class="home-img">
-               <img src="./assets/images/my.png" alt="My Image">
+                <img src="./assets/images/my.png" alt="My Image">
             </div>
         </div>
     </section>
@@ -64,15 +68,16 @@
 
             <div class="about-section">
                 <div class="about-img">
-                        <img src="./assets/images/about.jpg" alt="">
+                    <img src="./assets/images/about.jpg" alt="">
                 </div>
 
                 <div class="about-text">
                     <h1>I'm Rahul Raj</h1>
                     <p>Transforming ideas into seamless digital experience as a Full-Stack Developer.</p>
-                    <p>Welcome to my portfolio website! As a passionate full-stack developer, I thrive on transforming innovative ideas into tangible digital solutions.</p>
+                    <p>Welcome to my portfolio website! As a passionate full-stack developer, I thrive on transforming
+                        innovative ideas into tangible digital solutions.</p>
 
-                    <button class="about-btn">Download Cv   <i class="fa-solid fa-download"></i></button>
+                    <button class="about-btn">Download Cv <i class="fa-solid fa-download"></i></button>
                 </div>
             </div>
         </div>
@@ -83,17 +88,99 @@
 
 
     <!--------------- Contact section  --------------- -->
+
     <section>
-        
+        <div class="contact">
+            <div class="contact-heading">
+                <h1>Contact Me</h1>
+            </div>
+
+            <div class="contact-talk">
+                <div class="contact-talk-item">
+                    <h1>
+                        Let's discuss your project
+                    </h1>
+
+                    <span><i class="fa-solid fa-phone"></i>Phone</span>
+                    <span>+91 8809914242</span>
+
+                    <span><i class="fa-solid fa-envelope"></i></i>Email Address</span>
+                    <span> rajrahul00945@gmail.com</span>
+
+                    <span> <i class="fa-solid fa-location-dot"></i></i>Offical Address</span>
+                    <span>District: Samastipur | State: Bihar</span>
+                </div>
+
+                <div class="contact-email">
+                    <input type="text" id="name" placeholder="Enter name" />
+                    <input type="email" id="email" placeholder="Enter email" />
+                    <textarea id="subject" placeholder="Subject"></textarea>
+                    <textarea id="message" rows="3" placeholder="Message"></textarea>
+                    <button onclick="sendMail()">Submit <i class="fa-solid fa-paper-plane"></i> </button>
+
+                </div>
+            </div>
+
+
+        </div>
     </section>
 
 
 
+    <!---------------Footer section  --------------- -->
+    <footer>
+        <div class="footer">
 
- <!--=======External scripts=======-->
-    <script src="./Js/index.js">
+            <div class="footer-name">
+                <h1>Rahul Raj</h1>
+                <p>Full Stack Developer</p>
+                <h3>About Me</h3>
+            </div>
 
-    </script>
+            <div class="footer-more">
+                <div class="footer-more-heading">
+                    <div>
+                        <h1>More</h1>
+                    </div>
+                    <div>
+                        <span>Home</span>
+                        <span>Skills</span>
+                        <span>Project</span>
+                        <span>Contact</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer-follow">
+                <div class="footer-follow-heading">
+                    <div>
+                        <h1>More</h1>
+                    </div>
+                    <div>
+                        <span>Home</span>
+                        <span>Skills</span>
+                        <span>Project</span>
+                        <span>Contact</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-rights">
+            <span>@2023 by Rahul-dev | All &copy; rights reserved. </span>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!--=======External scripts=======-->
+    <script src="./Js/email.js"></script>
+    <script src="./Js/index.js"></script>
 </body>
 
 </html>
