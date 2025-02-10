@@ -1,198 +1,507 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <script src="https://kit.fontawesome.com/b9a6362a78.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript"></script>
+  <title>Portfolio Website (Rahul)</title>
+  <link rel="stylesheet" href="./Css/style.css">
+  <link rel="icon" type="image/jpg" href="./assets/images/my.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-    <link rel="stylesheet" href="./Css/style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript"></script>
+
+
 </head>
 
 <body>
-    <header >
-        <!--------------- Navigation  --------------- -->
-        <div class="nav-container" >
-            <nav>
-                <h1>Rahul Raj</h1>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+
+  <!-- //loaader -->
+
+<!-- 
+  <div id="loader">
+    <h1>WELCOME</h1>
+    <h1>TO MY PORTFOLIO</h1>
+    <h1>WEBSITE</h1>
+  </div> -->
+
+  <!--=======Scroll to top button=======-->
+  <div class="scrollToTop-btn flex-center">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!--=======Light/Dark theme button=======-->
+  <div class="theme-btn flex-center " onclick="themeToggle()">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+  </div>
+
+
+  <!--=======Header=======-->
+  <header>
+    <div class="nav-bar">
+      <a href="#" class="logo">Rahul Raj</a>
+      <div class="navigation">
+        <div class="nav-items">
+          <div class="nav-close-btn"></div>
+          <a class="active" href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#service">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
-    </header>
+      </div>
+      <div class="nav-menu-btn"></div>
+    </div>
+  </header>
 
+  <!--=======Home section=======-->
+  <section class="home flex-center" id="home">
+    <div class="home-container">
+      <div class="media-icons">
 
+        <a target="_blank" href="https://github.com/rahul-dev01"><i class="fa-brands fa-github"></i></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/rahul-dev01"><i class="fa-brands fa-linkedin"></i></a>
+        <a target="_blank" href="https://www.facebook.com/rajrahul00945/"><i class="fab fa-facebook-f"></i></a>
+        <a target="_blank" href="https://www.instagram.com/stories/_itz_rahul25/"><i class="fab fa-instagram"></i></a>
+        <a target="_blank" href="https://x.com/Rahul30625602/"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="info">
+        <h2>Hii, I am Rahul</h2>
+        <h3>Full-Stack Web  Developer | Cloud Enthusiast</h3>
+        <p>Welcome to my portfolio website! As a passionate full-stack developer, I thrive on transforming innovative
+          ideas into tangible digital solutions.</p>
+        <a href="#contact" class="btn">Contact Me <i class="fas fa-arrow-circle-right"></i></a>
+      </div>
+      <div class="home-img">
+        <img class="my" src="./assets/images/my.png" alt="">
+      </div>
+    </div>
+    <a href="#about" class="scroll-down">Scroll Down <i class="fas fa-arrow-down"></i></a>
+  </section>
 
-
-    <!---------------Home section  --------------- -->
-    <section id="about">
-        <div id="theme-toggle" onclick="themeToggle()">
-            <i id="theme-icon" class="fas fa-moon"></i>
+  <!--=======About section=======-->
+  <section class="about section" id="about">
+    <div class="container flex-center">
+      <h1 class="section-title-01">About Me</h1>
+      <h2 class="section-title-02">About Me</h2>
+      <div class="content flex-center">
+        <div class="about-img">
+          <img src="./assets/images/about.jpg" alt="">
         </div>
-        <div class="homePage ">
-            <div class="home-soical">
-                <a target="_blank" href="https://github.com/rahul-dev01"><i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="https://github.com/rahul-dev01"><i class="fa-brands fa-linkedin"></i></a>
-                <a target="_blank" href="https://github.com/rahul-dev01"><i class="fa-brands fa-facebook-f"></i></a>
-                <a target="_blank" href="https://github.com/rahul-dev01"><i class="fa-brands fa-instagram"></i></a>
-                <a target="_blank" href="https://github.com/rahul-dev01"><i class="fa-brands fa-x-twitter"></i></a>
+        <div class="about-info">
+          <div class="description">
+            <h3>I'am Rahul Raj</h3>
+            <h4>Transforming ideas into seamless <span>digital experience</span> as a <span>Full-Stack Developer.</span>
+            </h4>
+            <p>Welcome to my portfolio website! As a passionate full-stack developer, I thrive on transforming
+              innovative ideas into tangible digital solutions.</p>
+          </div>
+          <a href="./assets/pdf/Jan 25 Cv.pdf" class="btn" download>Download CV <i class="fas fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=======Skills section=======-->
+  <section class="skills section" id="skills">
+    <div class="container flex-center">
+      <h1 class="section-title-01">Skills</h1>
+      <h2 class="section-title-02">Skills</h2>
+      <div class="content">
+        <div class="skills-description">
+          <h3>Education & Skills</h3>
+          <p>"Proficient full stack developer skilled in building dynamic and responsive web applications. Experienced
+            in utilizing a diverse range of technologies to create intuitive and visually appealing user interfaces.
+            "</p>
+        </div>
+        <div class="skills-info education-all">
+          <div class="education">
+            <h4><label>Education</label></h4>
+            <ul class="edu-list">
+              <li class="item">
+                <span class="year">2018-2019</span>
+                <p><span>Matriculation</span> - Progressive Central  School.</p>
+              </li>
+              <li class="item">
+                <span class="year">2020-2021</span>
+                <p><span>Senior Secondary</span> - Sadhana Devi Vidyapith.</p>
+              </li>
+              <li class="item">
+                <span class="year">2022-2026</span>
+                <p><span>B.Tech in Computer Science</span> - Lovely Professional University.</p>
+              </li>
+
+            </ul>
+          </div>
+          <div class="education">
+            <h4><label>Skills</label></h4>
+            <ul class="bars">
+              <li class="bar">
+                <div class="info">
+                  <span>HTML</span>
+                  <span>99%</span>
+                </div>
+                <div class="line html"></div>
+              </li>
+
+              <li class="bar">
+                <div class="info">
+                  <span>CSS</span>
+                  <span>90%</span>
+                </div>
+                <div class="line css"></div>
+              </li>
+
+              <li class="bar">
+                <div class="info">
+                  <span>Javascript</span>
+                  <span>85%</span>
+                </div>
+                <div class="line javascript"></div>
+              </li>
+
+              <li class="bar">
+                <div class="info">
+                  <span>Tailwind</span>
+                  <span>80%</span>
+                </div>
+                <div class="line jquery"></div>
+              </li>
+
+              <li class="bar">
+                <div class="info">
+                  <span>React</span>
+                  <span>79%</span>
+                </div>
+                <div class="line php"></div>
+              </li>
+              <li class="bar">
+                <div class="info">
+                  <span>Node</span>
+                  <span>70%</span>
+                </div>
+                <div class="line php"></div>
+              </li>
+              <li class="bar">
+                <div class="info">
+                  <span>MongoDb</span>
+                  <span>75%</span>
+                </div>
+                <div class="line php"></div>
+              </li>
+
+
+            </ul>
+          </div>
+          <div class="education">
+            <h4><label>Certificate</label></h4>
+            <ul class="edu-list">
+              <li class="item">
+                <span class="year">2024</span>
+                <p><span>Full Stack Development Using MERN</span> -CipherScool</p>
+              </li>
+
+              <li class="item">
+                <span class="year">2023</span>
+                <p><span>The Complete Android 14 & Kotlin Development Masterclass</span>-Udemy</p>
+              </li>
+
+              <li class="item">
+                <span class="year">2023</span>
+                <p><span>Mastering Data Structures & Algorithms using C and C++</span> -Udemy</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skills-description">
+          <h3>Extracurricular Activity & Skills</h3>
+        </div>
+        <div class="skills-info">
+          <div class="experience-card">
+            <div class="upper" id="upper">
+              <h3>Participate in Smart India Hackathon</h3>
             </div>
+            <div class="hr" id="hr"></div>
+            <h4><label>24hrs Hackathon</label></h4>
+
+            <p>I participated in Smart India Hackathon a 24hrs Hackathon held on March 2024 at LOVELY PROFESSIONAL
+              UNIVERSITY organized by Team 7 in collaboration with BlockSeBlock.</p>
+          </div>
 
 
-            <div class="home-text">
-                <h2>Hii, I am <span>Rahul</span></h2>
-                <p>Full Stack Web Developer</p>
-                <p>Welcome to my portfolio website! As a passionate full-stack developer,
-                    I thrive on transforming
-                    innovative ideas into tangible digital solutions
+          <div class="experience-card">
+            <div class="upper" id="upper">
+              <h3>Participate in Decipher</h3>
+              <h5>Hunt The Ultimate Treasure</h5>
+            </div>
+            <div class="hr" id="hr"></div>
+            <h4><label>Secure the third position</label></h4>
+            <p>"DECIPHER-2023" Organized by Student Organization ortus under the Aegis of division of Youth
+              Affairs,Student Welfare Wing, Lovely Professional University on 29TH January 2023.</p>
+          </div>
+
+          <div class="experience-card">
+            <div class="upper" id="upper">
+              <h3>Backend</h3>
+              <h5>Node js | Express js | Express js | MongoDB</h5>
+            </div>
+            <div class="hr" id="hr"></div>
+            <h4><label>server-side </label></h4>
+            <p>
+              Backend development uses Node.js and Express.js for server-side apps. Node.js executes server-side
+              JavaScript, while Express.js offers a robust framework. MongoDB is favored for its flexibility, forming a
+              powerful backend stack.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=======Services section=======-->
+
+  <section class="services section" id="service">
+    <div class="container flex-center">
+      <h1 class="section-title-01">Project</h1>
+      <h1 class="section-title-02">Project</h1>
+      <div class="content">
+        <div class="service-description">
+          <h3>Different Projects..</h3>
+        </div>
+        <ul class="service-list">
+          <li class="service-container">
+            <div class="service-card">
+              <i class="fa-solid fa-cloud-bolt"></i>
+              <h3>Weather Application</h3>
+              <div class="learn-more-btn">
+                <h4><label> Learn More..</label></h4><i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+            </div>
+            <div class="service-modal flex-center">
+              <div class="service-modal-body">
+                <i class="fas fa-times modal-close-btn"></i>
+                <h3>Weather Application</h3>
+                <h4>Weather Application</h4>
+                <p>The Weather Application is a user-friendly platform that provides accurate, real-time weather updates for any 
+                  location worldwide. The app features an intuitive interface and is built to deliver detailed weather forecasts, 
+                  including temperature, humidity, wind speed, and more, helping users plan their day with confidence.
                 </p>
+                <h4>GitHub Link</h4>
+                <ul>
+                  <li><i class="fas fa-check-circle"><a target="_blank"
+                        href="https://github.com/Neyaj-2004/E-commerce-website.git">Click here</a></i></li>
+                </ul>
 
-                <button class="home-btn">Contact Me <i class="fa-solid fa-arrow-right"></i></button>
-
+              </div>
             </div>
+          </li>
 
-            <div class="home-img">
-                <img src="./assets/images/my.png" alt="My Image">
+          <li class="service-container">
+            <div class="service-card">
+              <i class="fa-solid fa-link"></i>
+              <h3>Url Shotner Application</h3>
+              <div class="learn-more-btn">
+                <h4><label> Learn More..</label></h4><i class="fas fa-long-arrow-alt-right"></i>
+              </div>
             </div>
+            <div class="service-modal flex-center">
+              <div class="service-modal-body">
+                <i class="fas fa-times modal-close-btn"></i>
+                <h3>Url Shotner Application</h3>
+                <h4>Url Shotner Application</h4>
+                <p>The URL Shortener Application is a simple and efficient tool built using the powerful MERN stack (MongoDB, Express.js, React, Node.js). 
+                  It allows users to shorten long URLs into concise and manageable links, enhancing link sharing and management. The app 
+                  also provides an easy way to track click analytics, making it ideal for marketing campaigns, sharing links on social media, 
+                  or simply organizing web links.</p>
+                <h4>Links :-</h4>
+                <ul>
+                  <li><i class="fas fa-check-circle"> <a target="_blank"
+                        href="https://github.com/Neyajahmad/Projects.git">GitHub</a></i></li>
+                  <li><i class="fas fa-check-circle"><a target="_blank"
+                        href="https://neyaj.freewebhostmost.com/">Live</a></i></li>
+                </ul>
+
+              </div>
+            </div>
+          </li>
+
+          <li class="service-container">
+            <div class="service-card">
+              <i class="fa-solid fa-headset"></i>
+              <h3>Ai Based QNA Search </h3>
+              <div class="learn-more-btn">
+                <h4><label> Learn More..</label></h4><i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+            </div>
+            <div class="service-modal flex-center">
+              <div class="service-modal-body">
+                <i class="fas fa-times modal-close-btn"></i>
+                <h3>Ai Based QNA Search</h3>
+                <h4>Ai Based QNA Search</h4>
+                <p>The AI-Powered Chat Application is an advanced solution built using the MERN stack (MongoDB, Express.js, React, Node.js)
+                   and AI technologies. This innovative application allows users to upload documents and get accurate answers to their
+                    queries based on the content of the uploaded documents. The app leverages machine learning models and NLP techniques 
+                    to provide context-aware responses, making it ideal for research, business documentation management, and knowledge
+                     extraction tasks.</p>
+                <h4>Links..</h4>
+                <ul>
+                  <li><i class="fas fa-check-circle"><a target="_blank" href="">Github</a></i></li>
+                  <li><i class="fas fa-check-circle"><a target="_blank" href="">Live</a></i></li>
+                </ul>
+
+              </div>
+            </div>
+          </li>
+
+
+          <li class="service-container">
+            <div class="service-card">
+              <i class="fa-solid fa-user"></i>
+              <h3>Portfolio Website</h3>
+              <div class="learn-more-btn">
+                <h4><label> Learn More..</label></h4><i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+            </div>
+            <div class="service-modal flex-center">
+              <div class="service-modal-body">
+                <i class="fas fa-times modal-close-btn"></i>
+                <h3>Portfolio Website</h3>
+                <h4>Portfolio Website</h4>
+                <p>The portfolio showcases my skills in web development, combining HTML, CSS, and JavaScript to create a
+                  dynamic and visually appealing user experience. Leveraging the ScrollReveal JavaScript library adds a
+                  touch of interactivity, allowing elements to animate smoothly as users navigate through the portfolio.
+                  The use of HTML provides the structure and content organization, while CSS brings creativity and
+                  styling to the forefront, ensuring a polished and professional appearance. JavaScript enhances
+                  functionality, </p>
+                <h4>Links..</h4>
+                <ul>
+                  <li><i class="fas fa-check-circle"><a target="_blank" href="">GitHub</a></i></li>
+                  <li><i class="fas fa-check-circle"><a target="_blank" href="">Live</a></i></li>
+                </ul>
+
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!--=======Contact section=======-->
+  <section class="contact section" id="contact">
+    <div class="container flex-center">
+      <h1 class="section-title-01">Contact Me</h1>
+      <h2 class="section-title-02">Contact Me</h2>
+      <div class="content">
+        <div class="contact-left">
+          <h2>Let's discuss your project</h2>
+          <ul>
+
+            <li class="contact-list">
+              <h3 class="item-title"><i class="fas fa-phone"></i>Phone</h3>
+              <span>+91 8809914242</span>
+            </li>
+
+            <li class="contact-list">
+              <h3 class="item-title"><i class="fas fa-envelope"></i>Email Address</h3>
+              <span><a href="neyajahmad6585@gmail.com">rajrhul0094@gmail.com</a></span>
+            </li>
+
+            <li class="contact-list">
+              <h3 class="item-title"><i class="fas fa-map-marker-alt"></i>Official Address</h3>
+              <span>District: Samastipur | State: Bihar</span>
+            </li>
+
+          </ul>
+
         </div>
-    </section>
 
 
-    <!--------------- About section  --------------- -->
 
-    <section>
-        <div>
-            <div class="about-heading">
-                <h1>About</h1>
+
+        <div class="contact-right">
+          <p>I'm Happy to connect <br><span>
+              Leave a message..
+            </span></p>
+
+          <div class="contact-form">
+            <div class="first-row">
+              <input type="text" id="name" placeholder="Enter name" />
             </div>
 
-            <div class="about-section">
-                <div class="about-img">
-                    <img src="./assets/images/about.jpg" alt="">
-                </div>
-
-                <div class="about-text">
-                    <h1>I'm Rahul Raj</h1>
-                    <p>Transforming ideas into seamless digital experience as a Full-Stack Developer.</p>
-                    <p>Welcome to my portfolio website! As a passionate full-stack developer, I thrive on transforming
-                        innovative ideas into tangible digital solutions.</p>
-
-                    <button class="about-btn">Download Cv <i class="fa-solid fa-download"></i></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <!--------------- Contact section  --------------- -->
-
-    <section>
-        <div class="contact">
-            <div class="contact-heading">
-                <h1>Contact Me</h1>
+            <div class="second-row">
+              <input type="email" id="email" placeholder="Enter email" />
+              <input type="text" id="subject" placeholder="Subject">
             </div>
 
-            <div class="contact-talk">
-                <div class="contact-talk-item">
-                    <h1>
-                        Let's discuss your project
-                    </h1>
+            <div class="third-row">
+              <textarea id="message" rows="7" placeholder="Message"></textarea>
 
-                    <span><i class="fa-solid fa-phone"></i>Phone</span>
-                    <span>+91 8809914242</span>
-
-                    <span><i class="fa-solid fa-envelope"></i></i>Email Address</span>
-                    <span> rajrahul00945@gmail.com</span>
-
-                    <span> <i class="fa-solid fa-location-dot"></i></i>Offical Address</span>
-                    <span>District: Samastipur | State: Bihar</span>
-                </div>
-
-                <div class="contact-email">
-                    <input type="text" id="name" placeholder="Enter name" />
-                    <input type="email" id="email" placeholder="Enter email" />
-                    <textarea id="subject" placeholder="Subject"></textarea>
-                    <textarea id="message" rows="3" placeholder="Message"></textarea>
-                    <button onclick="sendMail()">Submit <i class="fa-solid fa-paper-plane"></i> </button>
-
-                </div>
             </div>
-
-
-        </div>
-    </section>
-
-
-
-    <!---------------Footer section  --------------- -->
-    <footer>
-        <div class="footer">
-
-            <div class="footer-name">
-                <h1>Rahul Raj</h1>
-                <p>Full Stack Developer</p>
-                <h3>About Me</h3>
-            </div>
-
-            <div class="footer-more">
-                <div class="footer-more-heading">
-                    <div>
-                        <h1>More</h1>
-                    </div>
-                    <div>
-                        <span>Home</span>
-                        <span>Skills</span>
-                        <span>Project</span>
-                        <span>Contact</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="footer-follow">
-                <div class="footer-follow-heading">
-                    <div>
-                        <h1>More</h1>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-github"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-x-twitter"></i>
-
-                    </div>
-                </div>
-            </div>
+            <button class="btn" onclick="sendMail()" type="">Send Message <i class="fas fa-paper-plane"></i></button>
+          </div>
 
         </div>
 
-        <div class="footer-rights">
-            <span>@2023 by Rahul-dev | All &copy; rights reserved. </span>
-        </div>
-    </footer>
+      </div>
+
+    </div>
+    </div>
+    </div>
+  </section>
 
 
 
 
 
+  <!--=======Footer=======-->
+  <footer>
+    <div class="footer-container">
+      <div class="about group">
+        <h2>Rahul Raj</h2>
+        <p>Full-Stack Developer</p>
+        <a href="#about">About Me</a>
+      </div>
+      <div class="hr"></div>
+      <div class="info group">
+        <h3>More</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#service">Projects </a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="hr"></div>
+      <div class="follow group">
+        <h3>Follow</h3>
+        <ul>
+          <li><a target="_blank" href="https://github.com/rahul-dev01"><i class="fa-brands fa-github"></i></i></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/rahul-dev01"><i
+                class="fa-brands fa-linkedin"></i></a></li>
+          <li><a target="_blank" href="https://www.facebook.com/rajrahul00945/"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li><a target="_blank" href="https://www.instagram.com/stories/_itz_rahul25/"><i
+                class="fab fa-instagram"></i></a></li>
+          <li><a target="_blank" href="https://x.com/Rahul30625602/"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
 
+    </div>
+    <div class="footer-copyright group">
+      <p>@2024 by Coding snow. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <!---------------External scripts  --------------- -->
-
-    <script src="./Js/email.js"></script>
-    <script src="./Js/index.js"></script>
+  <!--=======External scripts=======-->
+  <script src="./Js/index.js"></script>
+  <script src="./Js/email.js"></script>
 </body>
 
 </html>
