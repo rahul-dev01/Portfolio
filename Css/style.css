@@ -680,19 +680,19 @@ header.sticky .nav-bar {
 .service-modal-body {
     position: relative;
     background: var(--model-bg-color);
-    max-width: 600px;
+    max-width: 70vw;
     margin: 20px;
     padding: 40px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
-    /* transform: translateY(-50px); */
+    transform: translateY(-50px);
    
 }
 
-/* .service-modal.active.service-modal-body {
+.service-modal.active.service-modal-body x{
     transform: translateY(0);
 
-} */
+}
 
 .service-modal-body .modal-close-btn {
     position: absolute;
